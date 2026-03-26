@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Dimpy ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #ff6f91;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff3e6c;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hey Dimpy ❤️</h1>
+    <div class="heart">💖</div>
+    <p>
+        I made something special just for you...
+    </p>
+
+    <button class="btn" onclick="showMessage()">Click Me</button>
+
+    <p id="message">
+        You are the most beautiful and gorgeous person in my life 💕<br><br>
+        Your smile makes my world brighter ✨<br><br>
+        I just want to say... stay happy always 😊<br><br>
+        And... I really like you ❤️
+    </p>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
